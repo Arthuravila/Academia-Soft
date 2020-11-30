@@ -13,7 +13,26 @@
         <action
             android:id="@+id/action_homeFragment_to_instructorFragment"
             app:destination="@id/instructorFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_trainingFragment"
+            app:destination="@id/trainingFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/trainingFragment"
+        android:name="com.app.academiasoft.ui.training.TrainingFragment"
+        android:label="@string/title_training"
+        tools:layout="@layout/fragment_training" >
+        <action
+            android:id="@+id/action_trainingFragment_to_trainingDetailFragment"
+            app:destination="@id/trainingDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/trainingDetailFragment"
+        android:name="com.app.academiasoft.ui.training.TrainingDetailFragment"
+        android:label="@string/title_training_detail"
+        tools:layout="@layout/fragment_training" />
 
     <fragment
         android:id="@+id/instructorFragment"
