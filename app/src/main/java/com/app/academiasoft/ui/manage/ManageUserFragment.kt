@@ -1,18 +1,14 @@
-package com.app.academiasoft.ui.home
+package com.app.academiasoft.ui.manage
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
 import com.app.academiasoft.R
-import com.app.academiasoft.databinding.FragmentHomeBinding
+import com.app.academiasoft.databinding.FragmentManageBinding
 import com.app.financialplayground.core.base.BaseFragment
-import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
-
-    private val homeViewModel: HomeViewModel by viewModel()
+class ManageUserFragment : BaseFragment<FragmentManageBinding>(R.layout.fragment_manage) {
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -33,12 +29,20 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
     }
 
     private fun setClickListeners() {
-        binding.buttonAluno.setOnClickListener {
+        binding.buttonCriar.setOnClickListener {
 
         }
 
-        binding.buttonInstrutor.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_instructorFragment)
+        binding.buttonDeletar.setOnClickListener {
+
+        }
+
+        binding.buttonAtualizar.setOnClickListener {
+
+        }
+
+        binding.buttonBuscar.setOnClickListener {
+
         }
     }
 }

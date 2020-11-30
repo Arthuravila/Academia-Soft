@@ -1,13 +1,8 @@
-package com.app.academiasoft.ui.home
+package com.app.academiasoft.ui.manage
 
-import androidx.lifecycle.*
+import androidx.lifecycle.ViewModel
 
-import kotlinx.coroutines.CoroutineExceptionHandler
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
-
-class HomeViewModel() : ViewModel() {
+class ManageUserViewModel : ViewModel() {
 
 /*    private val _viewStateLiveData: MutableLiveData<ViewState<Results>> = MutableLiveData()
     val viewStateLiveData = Transformations.map(_viewStateLiveData) { it }

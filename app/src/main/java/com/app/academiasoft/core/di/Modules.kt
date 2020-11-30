@@ -1,11 +1,13 @@
 package com.app.academiasoft.core.di
 
-import com.app.financialplayground.ui.home.HomeViewModel
+import com.app.academiasoft.ui.home.HomeViewModel
+import com.app.academiasoft.ui.manage.ManageUserViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 private val viewModelModule = module {
     viewModel { HomeViewModel() }
+    viewModel { ManageUserViewModel() }
 
 }
 
