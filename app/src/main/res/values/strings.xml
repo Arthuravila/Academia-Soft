@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Academia Soft</string>
     <string name="title_home">Home</string>
+    <string name="title_login">Login</string>
     <string name="title_training">Training</string>
     <string name="title_training_detail">Training Detail</string>
     <string name="title_instructor">Instructor</string>

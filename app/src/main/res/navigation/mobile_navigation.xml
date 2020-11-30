@@ -11,11 +11,24 @@
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_homeFragment_to_instructorFragment"
-            app:destination="@id/instructorFragment" />
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.app.academiasoft.ui.login.LoginFragment"
+        android:label="@string/title_login"
+        tools:layout="@layout/fragment_login" >
+        <argument
+            android:name="type"
+            app:argType="string" />
         <action
-            android:id="@+id/action_homeFragment_to_trainingFragment"
+            android:id="@+id/action_loginFragment_to_trainingFragment"
             app:destination="@id/trainingFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_instructorFragment"
+            app:destination="@id/instructorFragment" />
     </fragment>
 
     <fragment

@@ -34,11 +34,11 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
 
     private fun setClickListeners() {
         binding.buttonAluno.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_trainingFragment)
+            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToLoginFragment(""))
         }
 
         binding.buttonInstrutor.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_instructorFragment)
+            findNavController().navigate(R.id.action_homeFragment_to_loginFragment)
         }
     }
 }
