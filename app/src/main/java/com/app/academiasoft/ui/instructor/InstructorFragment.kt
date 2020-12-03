@@ -35,7 +35,7 @@ class InstructorFragment : BaseFragment<FragmentInstructorBinding>(R.layout.frag
         }
 
         binding.buttonAvaliar.setOnClickListener {
-
+            findNavController().navigate(R.id.action_instructorFragment_to_assessmentFragment)
         }
     }
 }

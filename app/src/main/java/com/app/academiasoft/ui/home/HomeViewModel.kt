@@ -12,7 +12,7 @@ class HomeViewModel() : ViewModel() {
 /*    private val _viewStateLiveData: MutableLiveData<ViewState<Results>> = MutableLiveData()
     val viewStateLiveData = Transformations.map(_viewStateLiveData) { it }
 
-    fun fetchFinances() {
+    fun fetchData() {
         _viewStateLiveData.value = ViewState.Loading
         val coroutineExceptionHandler = CoroutineExceptionHandler { _, exception ->
             onError(exception.message)

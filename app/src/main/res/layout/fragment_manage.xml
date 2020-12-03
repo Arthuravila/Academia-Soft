@@ -12,19 +12,6 @@
         android:layout_height="match_parent"
         tools:context=".ui.home.HomeFragment">
 
-        <TextView
-            android:id="@+id/textViewTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAllCaps="true"
-            android:textSize="18sp"
-            android:text="Gerenciar Usuários"
-            app:layout_constraintBottom_toTopOf="@+id/buttonCriar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
         <Button
             android:id="@+id/buttonCriar"
             android:layout_width="wrap_content"
