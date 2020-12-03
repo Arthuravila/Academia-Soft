@@ -9,12 +9,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.academiasoft.R
 import com.app.academiasoft.databinding.FragmentTrainingDetailBinding
 import com.app.financialplayground.core.base.BaseFragment
-import kotlinx.android.synthetic.main.fragment_training_detail.*
 
 class TrainingDetailFragment :
     BaseFragment<FragmentTrainingDetailBinding>(R.layout.fragment_training_detail) {
 
-    private lateinit var adapter: TrainingAdapter
+    private lateinit var trainingAdapter: TrainingAdapter
     private val trainingList = mutableListOf(Training())
 
     override fun onCreateView(
@@ -23,19 +22,15 @@ class TrainingDetailFragment :
         savedInstanceState: Bundle?
     ): View? {
         super.onCreateView(inflater, container, savedInstanceState)
-        return binding.root
-    }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+        trainingAdapter = TrainingAdapter(trainingList)
 
-        adapter = TrainingAdapter(trainingList)
-
-        trainingRv.apply {
-            adapter = this@TrainingDetailFragment.adapter
+        binding.trainingRv.apply {
+            adapter = trainingAdapter
             layoutManager = LinearLayoutManager(context)
             addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
         }
-    }
 
+        return binding.root
+    }
 }

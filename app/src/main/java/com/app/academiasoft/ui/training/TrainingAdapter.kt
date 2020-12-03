@@ -18,13 +18,13 @@ class TrainingAdapter(
         p0.bind(travels[0])
     }
 
-    override fun getItemCount() = 20
+    override fun getItemCount() = 15
 
     inner class TrainingViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
 
-        fun bind(travel: Training) {
-            view.tvName.text = travel.name
-            view.tvDescription.text = travel.description
+        fun bind(training: Training) {
+            // view.tvName.text = training.name
+            // view.tvDescription.text = training.description
         }
     }
 }
