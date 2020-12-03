@@ -7,9 +7,10 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.app.academiasoft.R
 import com.app.academiasoft.databinding.FragmentTrainingBinding
+import com.app.academiasoft.ui.home.HomeFragmentDirections
 import com.app.financialplayground.core.base.BaseFragment
 
-class TrainingFragment : BaseFragment<FragmentTrainingBinding>(R.layout.fragment_home) {
+class TrainingFragment : BaseFragment<FragmentTrainingBinding>(R.layout.fragment_training) {
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,7 +32,7 @@ class TrainingFragment : BaseFragment<FragmentTrainingBinding>(R.layout.fragment
 
     private fun setClickListeners() {
         binding.buttonTrainingList.setOnClickListener {
-
+            findNavController().navigate(R.id.action_trainingFragment_to_trainingDetailFragment)
         }
     }
 }
